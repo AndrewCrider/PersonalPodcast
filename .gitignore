@@ -151,4 +151,5 @@ supportFiles/supportFiles.json
 supportFiles/cloudServices.json
 
 # Ignore everything in the outputLocation directory
-outputLocation/*
+outputLocation/*.mp3
+
