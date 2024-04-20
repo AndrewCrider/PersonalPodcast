@@ -1,0 +1,8 @@
+{
+    "calendarsToSync": [
+      {"calendarid": "calendarID1", "calenderFriendly": "Personal"},
+      {"calendarid": "ReplaceMe", "calenderFriendly": "Work"},
+      {"calendarid": "ReplaceME", "calenderFriendly": "Family"}
+    ]
+  }
+  

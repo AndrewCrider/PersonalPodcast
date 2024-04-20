@@ -1,0 +1,14 @@
+google-api-python-client  # For googleapiclient.discovery
+google-auth  # For google.oauth2.service_account
+dateutil  # For dateutil.parser
+pytz
+requests
+newspaper3k  # Newspaper library, named as such in PyPI
+pydub
+feedparser
+unrealspeech 
+elevenlabs
+google-cloud-texttospeech  # For google.cloud.texttospeech
+pathlib  # Note: pathlib is part of the standard library in Python 3.5+
+openai
+todoist-api-python
