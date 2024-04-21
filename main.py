@@ -13,6 +13,7 @@ import random
 
 today = datetime.date.today()
 todaysPrefix = today.strftime("%Y%m%d")
+#Choose Your Voices Here: https://elevenlabs.io/app/voice-lab
 elevenLabvoiceID = "Eq7d3S8Qw8wQD5JNck7B"
 #From https://cloud.google.com/text-to-speech/docs/voices
 googleVoiceID = "en-US-Wavenet-F"
@@ -73,7 +74,7 @@ def assemblePodcast():
     
     introMusic = "entry_music"
     outroMusic = "exit_music"
-    podcastOrder = [introMusic, f"{todaysPrefix}_open", f"{todaysPrefix}_calendar", f"{todaysPrefix}_tasks", f"{todaysPrefix}_podcast", f"{todaysPrefix}_news", f"{todaysPrefix}_close",outroMusic  ]
+    podcastOrder = [introMusic, f"{todaysPrefix}_open", f"{todaysPrefix}_calendar", f"{todaysPrefix}_tasks", f"{todaysPrefix}_podcast", f"{todaysPrefix}_news", f"{todaysPrefix}_close", outroMusic  ]
 
 
     podcastPublication.combine_audio_files(podcastOrder, f"{todaysPrefix}_finalPodcast.mp3" )
@@ -84,11 +85,11 @@ def main():
     global transcript
     # Call all the other functions
     
-    #getWeatherAudio()
-    #getPodcastAudio()
-    #getTasksAudio()
-    #getNewsSummary()
-    #getCalendarSummary()
+    getWeatherAudio()
+    getPodcastAudio()
+    getTasksAudio()
+    getNewsSummary()
+    getCalendarSummary()
     
     assemblePodcast()
 
